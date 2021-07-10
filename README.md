@@ -8,6 +8,26 @@ pip install image-comparer
 ```
 
 ## Usage
+
+### CLI
+```bash
+image-compare
+```
+which wil show the follow help screen
+```
+usage: image-compare [-h] [--threshold THRESHOLD] Image1-Path Image2-Path
+```
+
+For example, you can compare two images with
+```bash
+image-compare tests/images/kobe.jpg tests/images/kobe2.jpg 
+```
+which gives the result
+```
+kobe.jpg and kobe2.jpg are not similar
+```
+
+### Programmatically
 With PIL
 
 ```python

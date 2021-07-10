@@ -3,7 +3,7 @@ from pathlib import Path
 from tqdm import tqdm
 import requests
 
-def download_model(model_path: Path, version="v1.0.0", block_Size=1024):
+def download_model(model_path: Path, version="v1.0.0", block_size=1024):
     model_url = f"https://github.com/joeyism/siamese-pytorch/releases/download/{version}/siamese-model.pt"
     response = requests.get(model_url, stream=True)
     total_size_in_bytes= int(response.headers.get('content-length', 0))
