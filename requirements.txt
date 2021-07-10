@@ -1,0 +1,7 @@
+numpy==1.16.1
+Pillow==5.4.1
+torch==1.0.1.post2
+torchvision==0.2.1
+opencv-python==4.5.2.54
+tqdm==4.61.2
+requests==2.25.1
