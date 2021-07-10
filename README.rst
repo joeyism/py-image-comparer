@@ -2,6 +2,8 @@
 py-image-comparer
 =================
 
+Compares two images using `Siamese Network <https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf>`_ trained from a `Pytorch Implementation <https://github.com/joeyism/siamese-pytorch>`_
+
 Installation
 ------------
 

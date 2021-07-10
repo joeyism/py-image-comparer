@@ -1,4 +1,5 @@
 from setuptools import find_packages, setup
+import re
 
 PACKAGE_NAME = "image-comparer"
 PACKAGE_NAME_UNDERLINE = PACKAGE_NAME.replace("-", "_")
