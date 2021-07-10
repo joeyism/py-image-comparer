@@ -1,4 +1,5 @@
 # py-image-comparer
+Compares two images using [Siamese Network](https://www.cs.cmu.edu/~rsalakhu/papers/oneshot1.pdf) trained from a [Pytorch Implementation](https://github.com/joeyism/siamese-pytorch)
 
 ## Installation
 To install, run
