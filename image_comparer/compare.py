@@ -31,7 +31,12 @@ transformer = transforms.Compose(
 def _pil_image_(image: ImageType) -> Image:
     return Image.fromarray(np.array(image)).resize(DEFAULT_IMAGE_SIZE)
 
-def is_similar(image1: ImageType, image2: ImageType, threshold=0.5):
+
+def is_similar(image1: ImageType, image2: ImageType, threshold=0.5) -> bool:
+    return calculate_score(image1, image2) > threshold
+
+
+def calculate_score(image1: ImageType, image2: ImageType) -> float:
     pil_image1 = _pil_image_(image1)
     pil_image2 = _pil_image_(image2)
 
@@ -39,4 +44,4 @@ def is_similar(image1: ImageType, image2: ImageType, threshold=0.5):
     image_tensor2 = transformer(pil_image2).unsqueeze(0)
 
     results = model(image_tensor1, image_tensor2)
-    return results.detach().cpu().numpy()[0][0] > threshold
+    return results.detach().cpu().numpy()[0][0]

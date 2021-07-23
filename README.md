@@ -50,6 +50,16 @@ image2 = cv2.imread("test/kobe2.jpg")
 image_comparer.is_similar(image, image2, threshold=0.5)
 ```
 
+## API
+
+### Methods
+
+`is_similar(image1: Union[Image.Image, np.ndarray], image2: Union[Image.Image, np.ndarray], threshold=0.5)`: Checks if the two images are similar based on the reshold passed
+
+
+`calculate_score(image1: Union[Image.Image, np.ndarray], image2: Union[Image.Image, np.ndarray])`: Calculates the score between the two images. The higher the score, the more closely the two images are related.
+
+
 ## Development
 
 ### Installation
