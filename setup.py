@@ -16,7 +16,7 @@ setup(
     version=version,
     description='Compares two images using siamese networks',
     long_description=open("README.rst", "r").read(),
-    long_description_content_type='text/rst',
+    long_description_content_type='text/x-rst',
     author='joeyism',
     url='https://github.com/joeyism/py-image-comparer',
     download_url='https://github.com/joeyism/py-image-comparer/archive/{}.tar.gz'.format(version),
